@@ -1,0 +1,204 @@
+.grid {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.title {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.node {
+  border: 1px solid #c4fff3;
+  padding: 0 0;
+  margin: 0 0;
+}
+
+.rows-distinct {
+  margin-top: -2.5px;
+}
+
+.button-container {
+  text-align: center;
+  background-color: #34495e;
+  padding-left: 80px;
+  height: 5%;
+  padding-bottom: 10px;
+}
+
+button {
+  opacity: 1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  transition-duration: 0.3s;
+}
+
+.grid-buttons {
+  background-color: gray;
+}
+
+.algo-buttons {
+  background-color: #1abc9c;
+}
+
+.algo-buttons:hover {
+  background-color: rgb(69, 106, 175);
+}
+
+.grid-buttons:hover {
+  background-color: rgb(40, 39, 39);
+}
+
+.disabled-buttons {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.credits {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#my-github {
+  color: rgb(69, 106, 175);
+}
+
+.additional-buttons:hover {
+  background-color: rgb(42, 120, 56);
+}
+
+label {
+  color: white;
+}
+
+#bar-title {
+  color: white;
+}
+
+.additional-buttons {
+  background-color: rgb(88, 178, 104);
+  width: 200px;
+}
+
+@media (max-width: 600px) {
+  .button-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 5px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    gap: 10px;
+  }
+
+  #bar-title {
+    width: 80%;
+    order: 1;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 8px;
+  }
+
+  button {
+    width: 30%;
+    order: 2;
+  }
+
+  label {
+    display: none;
+    width: 30.5%;
+    font-size: 15px;
+  }
+
+  .header {
+    background-color: #34495e;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    font-size: 23px;
+  }
+
+  .title {
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1439px) {
+  .button-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    padding: 8px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+  }
+
+  .node .grid {
+    color: #1abc9c;
+  }
+
+  .header {
+    background-color: #34495e;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    font-size: 23px;
+  }
+
+  .title {
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+
+  #bar-title {
+    width: 80%;
+    order: 1;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 8px;
+    letter-spacing: 2px;
+  }
+
+  button {
+    width: 150px;
+    order: 2;
+    font-size: 14px;
+  }
+
+  label {
+    display: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .additional-buttons {
+    position: absolute;
+    right: 40px;
+    background-color: rgb(255, 76, 10);
+    font-weight: 500;
+  }
+
+  #bar-title {
+    position: absolute;
+    left: 40px;
+  }
+
+  label {
+    display: none;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+}
